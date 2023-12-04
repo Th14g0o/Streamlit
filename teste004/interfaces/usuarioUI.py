@@ -17,14 +17,14 @@ class UsuarioUI:
 
     def CriarJogo():
         st.title("Adicionar jogo")
-        nome = st.text_input("Digite o nome do jogo") #text_input=input de texto
-        desc = st.text_area("Digite a descrição do jogo")#text_area= area de texto
-        valor = st.number_input("Digite o valor")#number_input= input feito para valores numeriocos(não da para escrever letras nele)
+        nome = st.text_input("Digite o nome do jogo") 
+        desc = st.text_area("Digite a descrição do jogo")
+        valor = st.number_input("Digite o valor")
         if st.button("Criar"):
             Servico.CriarJogo(0,nome,desc,valor)
-            st.success("Jogo adicionado com sucesso") #se deu certo mostra mensagem
-            time.sleep(2) #pausa de 2 segundos
-            st.rerun()  #recarrega a pagina
+            st.success("Jogo adicionado com sucesso") 
+            time.sleep(2) 
+            st.rerun()  
 
     def EditarJogo():
         st.title("Editar jogo")

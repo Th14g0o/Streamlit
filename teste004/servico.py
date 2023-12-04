@@ -22,8 +22,7 @@ class Servico:
     def AcharUsuario(id):
         return NUsuario.AcharPorId(id)
 
-    def RemoverUsuario(id, nome, email, senha):
-        user = Usuario(id,nome,email,senha)
+    def RemoverUsuario(user):
         return NUsuario.Excluir(user)
 
     def CriarUsuario(id, nome, email, senha):
